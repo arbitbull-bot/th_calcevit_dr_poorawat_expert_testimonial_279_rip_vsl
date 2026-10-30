@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',function(){const timer=document.querySelector('.timer');const copy=document.getElementById('offer-timer-count');if(timer&&copy){const sync=()=>{copy.textContent=timer.textContent;};sync();new MutationObserver(sync).observe(timer,{childList:true,characterData:true,subtree:true});}});
